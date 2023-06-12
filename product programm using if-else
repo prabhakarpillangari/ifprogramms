@@ -1,0 +1,29 @@
+package pracitce;
+
+public class Demo {
+public static void main(String[] args) {
+	int p1=500,p2=300,p3=100,p4=500;
+	double discount=0;
+	System.out.println("p1 = "+p1);
+	System.out.println("p2 = "+p2);
+	System.out.println("p3 = "+p3);
+	System.out.println("p4 = "+p4);
+	double bill=p1+p2+p3+p4;
+	System.out.println("total amount before discount = "+bill);
+	if(bill>2000)
+	{
+		discount=bill*0.15;
+		bill=bill-discount;
+		System.out.println("after 15 percent discount " + discount);
+		System.out.println("total amount after discount = "+bill);
+	}
+	else
+	{
+		double add=2000-bill;
+		System.out.println("amount to be added to get discount "+add);
+		
+	}
+	
+}
+
+}
