@@ -1,0 +1,39 @@
+package pracitce;
+
+public class bankbalance {
+public static void main(String[] args) {
+	int bal=250000,amount=249750;
+	int cpin=1234,epin=1234;
+	int bankCode=4;
+	if(cpin == epin)
+	{	
+		if(amount<bal)
+		{	
+			
+			bal-=amount;
+			System.out.println("current balance " +bal);
+//			if(bankCode == 1 && bal<10000)
+//			{
+//				bal=10000-bal;
+//				System.out.println("amount need to be added "+bal + "\nto maintain minimum balance");
+//			}
+//			if(bankCode == 2 && bal<5000)
+//			{
+//				bal=5000-bal;
+//				System.out.println("amount need to be added "+bal + "\nto maintain minimum balance");
+//			}
+			if(bankCode == 4 || bankCode == 5  && bal<1000)
+			{
+				bal=1000-bal;
+				System.out.println("amount need to be added "+bal + "\nto maintain minimum balance");
+			}
+		}
+	}
+	else
+	{
+		System.out.println("invalid pin");
+	}
+	
+	
+}
+}
