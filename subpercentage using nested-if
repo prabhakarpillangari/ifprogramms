@@ -1,0 +1,38 @@
+package pracitce;
+
+public class UsingOr 
+{
+  public static void main(String[] args) 
+  {
+    int p=20,m=45,c=39,o=60;
+
+        if( p<35 || m<35 || c<35 || o<35 )
+        {
+            System.out.println("fail");
+            if(p<35)
+            {
+              System.out.println("physics fail "+p);
+            }
+            if(m<35)
+            {
+              System.out.println("maths fail "+p);
+            }
+            if(c<35)
+            {
+              System.out.println("chemistry fail "+p);
+            }
+            if(o<35)
+            {
+              System.out.println("optional fail "+p);
+            }
+        }
+        else
+        {
+          double total=p+m+c+o;
+          double perc=100*total/400;
+          System.out.println(perc);
+          System.out.println("pass");
+        }
+
+    }
+}
