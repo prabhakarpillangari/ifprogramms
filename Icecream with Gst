@@ -1,0 +1,27 @@
+package pracitce;
+
+public class Icecream {
+	public static void main(String[] args) {
+		int flavourcode=2;
+		boolean taping=false;
+		boolean dryfruits=true;
+      double price=0;
+      if(flavourcode == 1)
+        price=100;
+      if(flavourcode == 2)
+        price=120;
+      if(flavourcode == 3)
+        price=130;
+      if(flavourcode == 4)
+        price=140;
+      if(taping==true)
+        price+=15;
+      if(dryfruits == true)
+        price+=22;
+      double gst= price*0.15;
+      System.out.println("price "+price);
+      System.out.println("gst "+gst);
+      price+=gst;
+      System.out.println("total "+price);
+	}
+}
