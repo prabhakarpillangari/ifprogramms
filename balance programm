@@ -1,0 +1,18 @@
+package pracitce;
+
+public class Balance_Programm {
+	public static void main(String[] args) {
+		int bal=5000;
+		int amountW=3000;
+		System.out.println(bal);
+		System.out.println(amountW);
+		if(amountW<bal)
+		{
+			bal=bal-amountW;
+			System.out.println(bal);
+		}
+		else {
+			System.out.println("insuffiecnt balance");
+		}
+	}
+}
