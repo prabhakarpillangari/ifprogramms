@@ -1,0 +1,19 @@
+package pracitce;
+
+public class SubjectPercenatge {
+	public static void main(String[] args) {
+		int p=40,m=45,c=39,o=60;
+		double total=p+m+c+o;
+		System.out.println(total);
+		double perc=100*total/400;
+		System.out.println(perc);
+		if(perc>35)
+		{
+			System.out.println("pass");
+		}
+		else
+		{
+			System.out.println("fail");
+		}
+	}
+}
